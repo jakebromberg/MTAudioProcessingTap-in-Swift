@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2394A5DB1FC24CCE00B61D4C /* AudioProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2394A5DA1FC24CCE00B61D4C /* AudioProcessor.swift */; };
 		6CDA05421BF2B64A00DC19D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDA05411BF2B64A00DC19D4 /* AppDelegate.swift */; };
 		6CDA05441BF2B64A00DC19D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDA05431BF2B64A00DC19D4 /* ViewController.swift */; };
 		6CDA05471BF2B64A00DC19D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CDA05451BF2B64A00DC19D4 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2394A5DA1FC24CCE00B61D4C /* AudioProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProcessor.swift; sourceTree = "<group>"; };
 		6CDA053E1BF2B64A00DC19D4 /* swift tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDA05411BF2B64A00DC19D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CDA05431BF2B64A00DC19D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				6CDA05411BF2B64A00DC19D4 /* AppDelegate.swift */,
+				2394A5DA1FC24CCE00B61D4C /* AudioProcessor.swift */,
 				6CDA05431BF2B64A00DC19D4 /* ViewController.swift */,
 				6CDA05451BF2B64A00DC19D4 /* Main.storyboard */,
 				6CDA05481BF2B64A00DC19D4 /* Assets.xcassets */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					6CDA053D1BF2B64A00DC19D4 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 92V374HC38;
 						LastSwiftMigration = 0810;
 					};
 				};
@@ -138,6 +142,7 @@
 			files = (
 				6CDA05441BF2B64A00DC19D4 /* ViewController.swift in Sources */,
 				6CDA05421BF2B64A00DC19D4 /* AppDelegate.swift in Sources */,
+				2394A5DB1FC24CCE00B61D4C /* AudioProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 92V374HC38;
 				INFOPLIST_FILE = "swift tap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.async.test.swift-tap";
@@ -263,6 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 92V374HC38;
 				INFOPLIST_FILE = "swift tap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.async.test.swift-tap";
