@@ -36,9 +36,25 @@ final class LogAudioProcessor: AudioProcessor {
         print("LogAudioProcessor")
     }
     
-    func tapStorageOutPointee() -> UnsafeMutableRawPointer {
-        let result = UnsafeMutableRawPointer(Unmanaged.passUnretained(self).toOpaque())
-        return result
+    func tap(with clientInfo: AnyObject) -> MTAudioProcessingTap? {
+        var callbacks = MTAudioProcessingTapCallbacks(
+            version: kMTAudioProcessingTapCallbacksVersion_0,
+            clientInfo: UnsafeMutableRawPointer(Unmanaged.passUnretained(clientInfo).toOpaque()),
+            init: initialize,
+            finalize: finalize,
+            prepare: prepare,
+            unprepare: unprepare,
+            process: process)
+        
+        var tap: Unmanaged<MTAudioProcessingTap>?
+        
+        let err = MTAudioProcessingTapCreate(kCFAllocatorDefault, &callbacks, kMTAudioProcessingTapCreationFlag_PostEffects, &tap)
+        
+        if err != noErr {
+            return nil
+        }
+        
+        return tap?.takeRetainedValue()
     }
     
     let initialize: MTAudioProcessingTapInitCallback = {
